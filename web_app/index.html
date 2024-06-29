@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block de Notas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="httVantaps://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="logo">Vanta</h1>
+        <h2 id="heading">Vanta Notas</h2>
+    </header>
+    <main>
+        <section id="seccion-agregar-nota">
+            <h2 class="sub-heading">Agregar Nota</h2>
+            <textarea id="entrada-nota" rows="4" placeholder="Escribe tu nota aquí..."></textarea>
+            <button id="boton-agregar-nota">Agregar Nota</button>
+        </section>
+        <section id="seccion-notas">
+            <div id="heading-tus-notas">
+                <h2 class="sub-heading">Tus Notas</h2>
+                <button id="boton-eliminar-todas">Eliminar todas las notas</button>
+            </div>
+            <ul id="lista-notas"></ul>
+        </section>
+    </main>
+    <footer>
+        <button id="boton-info">Información del Grupo</button>
+    </footer>
+    <div id="modal-info" class="modal">
+        <div class="contenido-modal">
+            <figure id="profile-pic">
+                <picture>
+                    <img src="../recursos/profile-pic-emi.jpg" alt="Imagen de perfil">
+                </picture>
+            </figure>
+            <div id="info-general">
+                <h2 id="info-alumna">Integrante del Grupo</h2>
+                <p>Emily Gaitan</p>
+                <p>Diseño y Desarrollo Web I</p>
+                <p>Diseño Multimedial</p>
+                <p>3 - 2024</p>
+                <p>Omar Toyos</p>
+            </div>
+            <span class="boton-cerrar">&times;</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
